@@ -27,6 +27,7 @@ async function exchangeCodeForToken(code) {
   const response = await axios.post(url, params, {
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
   });
+  console.log("Uber Token Response:", response.data); 
 
   return response.data;
 }

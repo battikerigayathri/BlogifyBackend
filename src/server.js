@@ -21,7 +21,7 @@ app.get("/auth/uber", (req, res) => {
 // Step 2: Uber redirects user back with ?code=xxx
 app.get("/auth/uber/callback", async (req, res) => {
   const code = req.query.code;
-
+  console.log("Uber Auth Code:", code);
   if (!code) {
     return res.status(400).json({ error: "Authorization code missing" });
   }
