@@ -46,7 +46,7 @@ async function exchangeCodeForToken(code) {
     client_id: process.env.UBER_CLIENT_ID,
     client_secret: process.env.UBER_CLIENT_SECRET,
     grant_type: "authorization_code",
-    redirect_uri: "https://gayatri.com/auth/uber/callback",
+    redirect_uri: "https://blogifybackend-tj2p.onrender.com/auth/uber/callback",
     code: code,
   });
 

@@ -1,6 +1,6 @@
 const axios = require("axios");
 
-const UBER_AUTHORIZE_URL = "https://auth.uber.com/auth/v2/authorize";
+const UBER_AUTHORIZE_URL = "https://auth.uber.com/v2/authorize";
 
 function getUberAuthUrl() {
   const params = new URLSearchParams({
